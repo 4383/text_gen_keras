@@ -1,0 +1,10 @@
+language: python
+
+python:
+    - "3.6"
+
+script:
+    - pip install scrapy
+    - cd scraping/spiders
+    - scrapy runspider speechlinks_spider.py --output links.json
+    - scrapy runspider speech_spider.py --output speeches.json
