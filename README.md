@@ -8,12 +8,12 @@ cd scraping/spiders
 
 * Scraper les liens vers chaque discours et les stocker dans un JSON
 ```
-scrapy runspider speechlinks_spider.py links.json
+scrapy runspider speechlinks_spider.py --output links.json
 ```
 
 * Scraper les discours en entier via leurs liens
 ```
-scrapy runspider speech_spider.py speeches.json
+scrapy runspider speech_spider.py --output speeches.json
 ```
 
 ### Modèle
