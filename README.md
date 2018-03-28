@@ -1,8 +1,18 @@
+### Installe
+Dans un premier temps il vous faut cloner le projet et initialiser un
+environnement virtuel à l'aide de [pipenv](https://docs.pipenv.org/).
+
+Pipenv installera automatiquement pour vous l'ensemblde des dépendances
+
+```sh
+git clone https://github.com/sofienealouini/text_gen_keras
+cd text_gen_keras
+pipenv shell
+```
+
 ### Scraping
 
-* Installer Scrapy et se placer dans le dossier
 ```
-conda install scrapy
 cd scraping/spiders
 ```
 
