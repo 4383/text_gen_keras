@@ -1,3 +1,4 @@
+#! -*-coding:utf8-*-
 import tensorflow as tf
 import keras.backend as K
 from keras.models import Sequential, load_model

@@ -1,3 +1,4 @@
+#! -*-coding:utf8-*-
 # Paramètres de prétraitement
 LOCAL_PATH = "candidats.txt"
 SEQ_LEN = 50

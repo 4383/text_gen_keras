@@ -1,3 +1,4 @@
+#! -*-coding:utf8-*-
 from keras.models import Sequential, load_model
 import numpy as np
 import argparse

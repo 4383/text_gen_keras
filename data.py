@@ -1,3 +1,4 @@
+#! -*-coding:utf8-*-
 from params import LOCAL_PATH, SEQ_LEN, SEQ_SKIP, PRED_START_INDEX
 from processing import get_alphabet, create_dicts, encode, create_data
 
