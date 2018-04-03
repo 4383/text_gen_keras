@@ -1,3 +1,4 @@
+#! -*-coding:utf8-*-
 import tensorflow as tf
 import keras.backend as K
 from keras.models import Sequential, load_model
@@ -6,6 +7,8 @@ from keras.callbacks import ModelCheckpoint
 from data import NB_CHARS, INPUTS, TARGETS
 from params import NB_ITER, BATCH_SIZE, SEQ_LEN
 import argparse
+import os.isdir as isdir
+import os.mkdir as mkdir
 
 
 # Arguments à fournir dans le terminal
@@ -23,7 +26,9 @@ if not args.gpu:
 
 
 # Définition de checkpoints
-filepath = "/output/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
+if not isdir("output"):
+    mkdir("output")
+filepath = "output/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1,save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
 
